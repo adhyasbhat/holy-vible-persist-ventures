@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: inline-block;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+   
+}
+body::before{
+    content: "";
+    background: url('./backround.webp') no-repeat center center/cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+#title{
+    padding-top: 2em;
+}
+#title h1{
+    font-size: 4em;
+}
+.testament, .quote, .words, .links{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.words{
+    align-items: center;
+    display: grid;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    
+}
+.link{
+    
+    color: black;
+    text-decoration: none;
+    
+}
+.link:hover{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 600;
+    
+
+}
+.content{
+    overflow-x: hidden;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+.saying{
+    font-weight: 600;
+}
